@@ -15,16 +15,18 @@
 ![lolcat](https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg "lolcat")
 ![lolcat](https://raw.githubusercontent.com/KaiboLiu/fancy-repos/master/img/svg_lolcat.svg "lolcat")
 <img src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg?sanitize=true">
-<img src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svgg">
+
 <img src="https://raw.githubusercontent.com/KaiboLiu/fancy-repos/master/img/svg_lolcat.svg?sanitize=true">
 
 
-![Alt text](https://raw.github.com/potherca-blog/StackOverflow/master/question.13808020.include-an-svg-hosted-on-github-in-markdown/controllers_brief.svg?sanitize=true)
 
-
-
-
+<img src="https://cdn.rawgit.com/KaiboLiu/fancy-repos/eb9a3d74/img/svg_lolcat.svg">
 <img src="https://cdn.rawgit.com/KaiboLiu/kaiboliu.github.io/231f16fe/images/svg_cheat.sh.svg">
+
+![lolcat](https://cdn.rawgit.com/KaiboLiu/fancy-repos/eb9a3d74/img/svg_lolcat.svg "lolcat")
+![cheat.sh](https://cdn.rawgit.com/KaiboLiu/kaiboliu.github.io/231f16fe/images/svg_cheat.sh.svg "cheat.sh")
+
+
 
 <img src="https://github.com/KaiboLiu/kaiboliu.github.io/blob/master/images/svg_cheat.sh.svg">
 ![Alt text](https://github.com/KaiboLiu/kaiboliu.github.io/blob/master/images/svg_cheat.sh.svg)
