@@ -5,4 +5,5 @@
 1. explore a very fancy command line tool, [lolcat](https://github.com/busyloop/lolcat) to output rainbow of colors in terminal.  
 
 ![lolcat](./svg_lolcat.svg)
+<img src="./svg_lolcat.svg">
 ![cheat.sh](./svg_cheat.sh.svg)
