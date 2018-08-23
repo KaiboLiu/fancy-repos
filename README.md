@@ -12,8 +12,8 @@
 <img src="./svg_cheat.sh.svg">
 ![lolcat](https://github.com/KaiboLiu/fancy-repos/blob/master/svg_lolcat.svg "lolcat")
 ![lolcat](https://raw.githubusercontent.com/KaiboLiu/fancy-repos/master/svg_lolcat.svg "lolcat")
+<img src="https://github.com/KaiboLiu/fancy-repos/blob/master/svg_lolcat.svg">
 
 
-
-<iframe width="60%" src="./svg_lolcat.svg"</iframe>
+<iframe width="60%" src="./svg_lolcat.svg"</iframe>  
 <iframe width="60%" src="https://github.com/KaiboLiu/fancy-repos/blob/master/svg_lolcat.svg"</iframe>
