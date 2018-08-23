@@ -15,4 +15,5 @@
 
 
 
-<iframe width="60%" src="./svg_lolcat.svg" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+<iframe width="60%" src="./svg_lolcat.svg"</iframe>
+<iframe width="60%" src="https://github.com/KaiboLiu/fancy-repos/blob/master/svg_lolcat.svg"</iframe>
