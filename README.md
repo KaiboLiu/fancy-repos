@@ -20,10 +20,9 @@
 ![Alt text](https://raw.github.com/potherca-blog/StackOverflow/master/question.13808020.include-an-svg-hosted-on-github-in-markdown/controllers_brief.svg?sanitize=true)
 
 
-<iframe width="60%" src="./img/svg_lolcat.svg"</iframe>  
-<iframe width="60%" src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg"</iframe>
 
 
+<img src="https://github.com/KaiboLiu/kaiboliu.github.io/blob/master/images/svg_cheat.sh.svg">
 
 ![Alt text](https://github.com/KaiboLiu/kaiboliu.github.io/blob/master/images/svg_cheat.sh.svg)
 ![Alt text](https://raw.githubusercontent.com/KaiboLiu/kaiboliu.github.io/master/images/svg_cheat.sh.svg)
