@@ -13,9 +13,12 @@
 ![lolcat](https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg "lolcat")
 ![lolcat](https://raw.githubusercontent.com/KaiboLiu/fancy-repos/master/img/svg_lolcat.svg "lolcat")
 <img src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg?sanitize=true">
+<img src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg">
 <img src="https://raw.githubusercontent.com/KaiboLiu/fancy-repos/master/img/svg_lolcat.svg?sanitize=true">
 
 
-?sanitize=true
+![Alt text](https://raw.github.com/potherca-blog/StackOverflow/master/question.13808020.include-an-svg-hosted-on-github-in-markdown/controllers_brief.svg?sanitize=true)
+
+
 <iframe width="60%" src="./img/svg_lolcat.svg"</iframe>  
 <iframe width="60%" src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg"</iframe>
