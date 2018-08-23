@@ -10,4 +10,8 @@
 -->
 <img src="./svg_lolcat.svg">
 <img src="./svg_cheat.sh.svg">
+![lolcat](https://github.com/KaiboLiu/fancy-repos/blob/master/svg_lolcat.svg "lolcat")
+![lolcat](https://raw.githubusercontent.com/KaiboLiu/fancy-repos/master/svg_lolcat.svg "lolcat")
+
+
 
