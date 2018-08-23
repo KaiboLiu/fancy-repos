@@ -15,3 +15,4 @@
 
 
 
+<iframe width="60%" src="./svg_lolcat.svg" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
