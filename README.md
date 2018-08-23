@@ -13,7 +13,7 @@
 ![lolcat](https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg "lolcat")
 ![lolcat](https://raw.githubusercontent.com/KaiboLiu/fancy-repos/master/img/svg_lolcat.svg "lolcat")
 <img src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg?sanitize=true">
-<img src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg">
+<img src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svgg">
 <img src="https://raw.githubusercontent.com/KaiboLiu/fancy-repos/master/img/svg_lolcat.svg?sanitize=true">
 
 
@@ -22,3 +22,8 @@
 
 <iframe width="60%" src="./img/svg_lolcat.svg"</iframe>  
 <iframe width="60%" src="https://github.com/KaiboLiu/fancy-repos/blob/master/img/svg_lolcat.svg"</iframe>
+
+
+
+![Alt text](https://github.com/KaiboLiu/kaiboliu.github.io/blob/master/images/svg_cheat.sh.svg)
+![Alt text](https://raw.githubusercontent.com/KaiboLiu/kaiboliu.github.io/master/images/svg_cheat.sh.svg)
