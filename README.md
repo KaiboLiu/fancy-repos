@@ -36,9 +36,19 @@
 		- `-n` means make the 9th column as numeric instead of string
 		- `-u` means merge all the duplicates in **9th column**
 		- `-r` means sort reversely
-- list the result with highest rent
+	- sed: `sed -i 'str' 's/original/new/g' file.txt`
+		- `-i` in-place(i.e. save back to the original file), while in OSX, we need to use `-i 'str'` as extension to save the file as file**str**.txt
+		- `s` = the substitute command
+		- `original` = a regular expression describing the word to replace (or just the word itself)
+		- `new` = the text to replace it with
+		- `g` = global (i.e. replace all and not just the first occurrence)
+		- `file.txt` = the file name
+- list the results
 	```bash
-	cat -n rent_lianjia_bj_0.txt | sort -rnt$',' -k9|head -15| lolcat
+	cat -n rent_lianjia_bj.txt | sort -rnt$',' -k9|head -15| lolcat
+	# highest rent
+	cat -n rent_lianjia_bj.txt | sort -rnt$',' -k11|head -15| lolcat
+	# highest unit_rent
 	```
 - color in awk
 	```bash
@@ -49,5 +59,5 @@
 	NONE='\033[0m'
 	awk '{print $1, "\033[01;31m"$2"\033[0m", $3}'
 	```
-- 34min for Beijing
-- ?min for Shanghai
+- 34min/2070s for Beijing
+- 42min/2516s for Shanghai
