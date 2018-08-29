@@ -73,7 +73,7 @@ def get_house_info(area, page, url):
             price = content.xpath("//div[@class='col-3']/div/span/text()")[i] 
             with open('rent_lianjia_{}.txt'.format(city),'a',encoding='utf-8') as f: 
                 #f.write(area + ',' + title + ',' + room_type + ',' + square + ',' +position+ ','+ detail_place+','+floor+','+total_floor+','+price+','+house_year+'\n') 
-                f.write('{},{},{},{},{},{},{},{},{},{}, {:.3}\n'.format(area, title, room_type, square,position, detail_place,floor,total_floor,price,house_year, int(price)/int(square)))
+                f.write('{},{},{},{},{},{},{},{},{},{}, {:.2f}\n'.format(area, title, room_type, square,position, detail_place,floor,total_floor,price,house_year, int(price)/int(square)))
  
             sys.stdout.write('writing work [{}][page{}#{}/{}] has done!continue the next page {}'.format(area,page,i+1,len(titles),'\r'))    # 08/27/2018 by kaibo
             if i < len(titles)-1: sys.stdout.flush()
