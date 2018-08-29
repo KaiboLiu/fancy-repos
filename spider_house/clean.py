@@ -1,7 +1,8 @@
 import pandas as pd
 import sys
 
-fileName = 'rent_lianjia_bj_0.txt' if len(sys.argv) == 1 else sys.argv[1]
+fileName = 'rent_lianjia_bj.txt' if len(sys.argv) == 1 else sys.argv[1]
+print(fileName)
 f = open(fileName,'r')
 
 df = pd.read_csv(f, sep=',', header=None, encoding='utf-8',
@@ -9,3 +10,4 @@ df = pd.read_csv(f, sep=',', header=None, encoding='utf-8',
 
 
 print(df.describe())   #list the statistic table of all the numerical columns
+print(type(df.describe()))
