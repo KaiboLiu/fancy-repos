@@ -3,17 +3,21 @@ import pandas as pd
 import sys
 from pyecharts import Bar, Line, Pie, Overlap
 
+city_dict = {'bj':'北京','sh':'上海','hz':'杭州','sz':'深圳'}
 
-fileName = 'rent_lianjia_bj.txt' if len(sys.argv) == 1 else sys.argv[1]
-city = '北京' if len(sys.argv) == 1 else '上海'
+city_init = 'bj' if len(sys.argv) == 1 else sys.argv[1]
+city = city_dict[city_init]
+
+fileName = 'rent_lianjia_{}.txt'.format(city_init)
 print(fileName)
 f = open(fileName,'r')
 
 df = pd.read_csv(f, sep=',', header=None, encoding='utf-8',
                  names=['area', 'title', 'type', 'square', 'orient', 'detail_place', 'floor', 'total_floor', 'price', 'year', 'unit_price'])
 
+#df = df.round(2)
 
-print(df.describe())   #list the statistic table of all the numerical columns
+print(df.describe().round(2))   #list the statistic table of all the numerical columns
 print(type(df.describe()))
 
 
@@ -27,23 +31,23 @@ def render_num_price(x):
     detail_place_main = house_com.sort_values('count',ascending=False)[0:20] 
      
     attr = detail_place_main[x[0]] 
-    v1 = detail_place_main['count'] 
-    v2 = detail_place_main['mean'] 
+    v1 = detail_place_main['count'].round(2)
+    v2 = detail_place_main['mean'].round(2) 
      
-    line = Line("{}主要房租均价".format(city, x[1])) 
-    line.add(x[1],attr,v2,is_stack=True,xaxis_rotate=30,yaxix_min=4.2, 
-        mark_point=['min','max'],xaxis_interval=0,line_color='lightblue', 
-        line_width=4,mark_point_textcolor='black',mark_point_color='lightblue', 
-        is_splitline_show=False) 
-     
-    bar = Bar("{}主要{}房屋数量&均价".format(city, x[1])) 
-    bar.add(x[1],attr,v1,is_stack=True,xaxis_rotate=30,yaxix_min=4.2, 
+    bar = Bar("{}主要{}房屋数量&月租均价".format(city, x[1]), "data from Lianjia.com")  
+    bar.add("数量",attr,v1,is_stack=True,xaxis_rotate=30,yaxix_min=4.2, 
         xaxis_interval=0,is_splitline_show=False) 
+     
+    line = Line("{}主要月租均价".format(city, x[1]), "data from Lianjia.com") 
+    line.add("月租",attr,v2,is_stack=True,xaxis_rotate=30,yaxix_min=4.2, 
+        mark_point=['min','max'],xaxis_interval=0,line_color='lightblue', 
+        line_width=4,mark_point_textcolor='lightblue',mark_point_color='lightblue', 
+        is_splitline_show=False) 
      
     overlap = Overlap() 
     overlap.add(bar) 
     overlap.add(line,yaxis_index=1,is_add_yaxis=True) 
-    overlap.render('{}{}_数量均价分布.html'.format(city, x[1])) 
+    overlap.render('{}{}_数量月租分布.html'.format(city, x[1])) 
 
 
 

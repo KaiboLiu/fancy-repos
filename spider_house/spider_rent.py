@@ -5,7 +5,7 @@ from lxml import etree
 import pinyin
 import sys
 
-city = 'sh'
+city = 'bj' if len(sys.argv) == 1 else sys.argv[1]
 n_cut = 2 if city == 'bj' else 0
 base_url = 'https://{}.lianjia.com'.format(city) 
 # 获取某市区域的所有链接 

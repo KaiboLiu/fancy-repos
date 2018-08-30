@@ -29,15 +29,16 @@
 </script>
 </head>
 <body>
-    <div id="90ab26e65c1f42388741b89dee2a6f41" style="width:800px;height:400px;"></div>
+    <div id="5986f3d66b5140ebb42eaa2e0587e266" style="width:800px;height:400px;"></div>
     <script type="text/javascript">
 
-var myChart_90ab26e65c1f42388741b89dee2a6f41 = echarts.init(document.getElementById('90ab26e65c1f42388741b89dee2a6f41'), 'light', {renderer: 'canvas'});
+var myChart_5986f3d66b5140ebb42eaa2e0587e266 = echarts.init(document.getElementById('5986f3d66b5140ebb42eaa2e0587e266'), 'light', {renderer: 'canvas'});
 
-var option_90ab26e65c1f42388741b89dee2a6f41 = {
+var option_5986f3d66b5140ebb42eaa2e0587e266 = {
     "title": [
         {
-            "text": "\u4e0a\u6d77\u623f\u5c4b\u9762\u79ef&\u4ef7\u4f4d\u5206\u5e03",
+            "text": "\u6df1\u5733\u4e3b\u8981\u533a\u57df\u623f\u5c4b\u6570\u91cf&\u6708\u79df\u5747\u4ef7",
+            "subtext": "data from Lianjia.com",
             "left": "auto",
             "top": "auto",
             "textStyle": {
@@ -66,7 +67,7 @@ var option_90ab26e65c1f42388741b89dee2a6f41 = {
             }
         }
     },
-    "series_id": 6528612,
+    "series_id": 1587494,
     "tooltip": {
         "trigger": "item",
         "triggerOn": "mousemove|click",
@@ -83,18 +84,20 @@ var option_90ab26e65c1f42388741b89dee2a6f41 = {
     "series": [
         {
             "type": "bar",
+            "name": "\u6570\u91cf",
             "data": [
-                2372.033570701933,
-                4754.546663555763,
-                5990.647045297769,
-                8720.539505428227,
-                12681.707360070515,
-                19410.4804400978,
-                24942.522707797772,
-                38133.68449197861,
-                49198.84393063584
+                1013.0,
+                901.0,
+                865.0,
+                570.0,
+                489.0,
+                296.0,
+                91.0,
+                10.0,
+                8.0,
+                5.0
             ],
-            "stack": "stack_6528612",
+            "stack": "stack_1587494",
             "barCategoryGap": "20%",
             "label": {
                 "normal": {
@@ -117,13 +120,129 @@ var option_90ab26e65c1f42388741b89dee2a6f41 = {
             "markLine": {
                 "data": []
             },
-            "seriesId": 6528612
+            "seriesId": 1587494
+        },
+        {
+            "type": "line",
+            "name": "\u6708\u79df",
+            "symbol": "emptyCircle",
+            "symbolSize": 4,
+            "smooth": false,
+            "step": false,
+            "stack": "stack_2119443",
+            "showSymbol": true,
+            "data": [
+                [
+                    "\u9f99\u5c97\u533a",
+                    4880.05
+                ],
+                [
+                    "\u5357\u5c71\u533a",
+                    18772.54
+                ],
+                [
+                    "\u798f\u7530\u533a",
+                    11777.22
+                ],
+                [
+                    "\u7f57\u6e56\u533a",
+                    7301.91
+                ],
+                [
+                    "\u9f99\u534e\u533a",
+                    6320.57
+                ],
+                [
+                    "\u5b9d\u5b89\u533a",
+                    9321.08
+                ],
+                [
+                    "\u76d0\u7530\u533a",
+                    6054.95
+                ],
+                [
+                    "\u576a\u5c71\u533a",
+                    3510.0
+                ],
+                [
+                    "\u5927\u9e4f\u65b0\u533a",
+                    2537.38
+                ],
+                [
+                    "\u5149\u660e\u65b0\u533a",
+                    4640.0
+                ]
+            ],
+            "label": {
+                "normal": {
+                    "show": false,
+                    "position": "top",
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                },
+                "emphasis": {
+                    "show": true,
+                    "textStyle": {
+                        "fontSize": 12
+                    }
+                }
+            },
+            "lineStyle": {
+                "normal": {
+                    "width": 4,
+                    "opacity": 1,
+                    "curveness": 0,
+                    "type": "solid",
+                    "color": "lightblue"
+                }
+            },
+            "areaStyle": {
+                "opacity": 0
+            },
+            "markPoint": {
+                "data": [
+                    {
+                        "type": "min",
+                        "name": "Minimum",
+                        "symbol": "pin",
+                        "symbolSize": 50,
+                        "label": {
+                            "normal": {
+                                "textStyle": {
+                                    "color": "lightblue"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "type": "max",
+                        "name": "Maximum",
+                        "symbol": "pin",
+                        "symbolSize": 50,
+                        "label": {
+                            "normal": {
+                                "textStyle": {
+                                    "color": "lightblue"
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            "markLine": {
+                "data": []
+            },
+            "seriesId": 1587494,
+            "xAxisIndex": 0,
+            "yAxisIndex": 1
         }
     ],
     "legend": [
         {
             "data": [
-                ""
+                "\u6570\u91cf",
+                "\u6708\u79df"
             ],
             "selectedMode": "multiple",
             "show": true,
@@ -167,19 +286,51 @@ var option_90ab26e65c1f42388741b89dee2a6f41 = {
                 }
             },
             "data": [
-                "0-30",
-                "30-60",
-                "60-90",
-                "90-120",
-                "120-150",
-                "150-200",
-                "200-300",
-                "300-400",
-                "400+"
+                "\u9f99\u5c97\u533a",
+                "\u5357\u5c71\u533a",
+                "\u798f\u7530\u533a",
+                "\u7f57\u6e56\u533a",
+                "\u9f99\u534e\u533a",
+                "\u5b9d\u5b89\u533a",
+                "\u76d0\u7530\u533a",
+                "\u576a\u5c71\u533a",
+                "\u5927\u9e4f\u65b0\u533a",
+                "\u5149\u660e\u65b0\u533a"
             ]
         }
     ],
     "yAxis": [
+        {
+            "show": true,
+            "nameLocation": "middle",
+            "nameGap": 25,
+            "nameTextStyle": {
+                "fontSize": 14
+            },
+            "axisTick": {
+                "alignWithLabel": false
+            },
+            "inverse": false,
+            "boundaryGap": true,
+            "type": "value",
+            "splitLine": {
+                "show": false
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 1
+                }
+            },
+            "axisLabel": {
+                "interval": "auto",
+                "formatter": "{value} ",
+                "rotate": 0,
+                "margin": 8,
+                "textStyle": {
+                    "fontSize": 12
+                }
+            }
+        },
         {
             "show": true,
             "nameLocation": "middle",
@@ -240,7 +391,7 @@ var option_90ab26e65c1f42388741b89dee2a6f41 = {
         "#f6f5ec"
     ]
 };
-myChart_90ab26e65c1f42388741b89dee2a6f41.setOption(option_90ab26e65c1f42388741b89dee2a6f41);
+myChart_5986f3d66b5140ebb42eaa2e0587e266.setOption(option_5986f3d66b5140ebb42eaa2e0587e266);
 
 </script>
 </body>

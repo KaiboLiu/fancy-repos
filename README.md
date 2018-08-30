@@ -61,8 +61,10 @@
 	NONE='\033[0m'  
 	awk '{print $1, "\033[01;31m"$2"\033[0m", $3}'  
 	```  
-- 34min/2070s for Beijing  
-- 42min/2516s for Shanghai
+- 34min/2070s for Beijing  (19551 items) 
+- 42min/2516s for Shanghai (14051 items)
+- 10min/ 636s for Shenzhen (4248 items)
+- 16min/ 964s for Hangzhou (6589 items)
 - get to know a package [pyecharts](https://github.com/pyecharts/pyecharts) form the author of this project via wechat
 
 
