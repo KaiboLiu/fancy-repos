@@ -65,6 +65,7 @@
 - 42min/2516s for Shanghai (14051 items)
 - 10min/ 636s for Shenzhen (4248 items)
 - 16min/ 964s for Hangzhou (6589 items)
+- 15min/ 924s for Changsha (6128 items)
 - get to know a package [pyecharts](https://github.com/pyecharts/pyecharts) form the author of this project via wechat
 
 
@@ -74,5 +75,21 @@ wonderful [projects](https://github.com/d3/d3/wiki/Gallery) from [d3js](https://
 - [Streamgraph](./d3js/), from online [project](https://bl.ocks.org/mbostock/4060954)
 - [Word Cloud](https://www.jasondavies.com/wordcloud/) very cool visualization tool ready to use
 - [D3 Hierarchical Edge Bundling](https://beta.observablehq.com/@mbostock/d3-hierarchical-edge-bundling), and [interactive version](http://mbostock.github.io/d3/talk/20111116/#17)
-- [POLITICAL INFLUENC](http://www.brightpointinc.com/political_influence/)
+- [POLITICAL INFLUENCE](http://www.brightpointinc.com/political_influence/)
 - [Over the Decades, How States Have Shifted](https://archive.nytimes.com/www.nytimes.com/interactive/2012/10/15/us/politics/swing-history.html)
+
+
+
+
+- fix the bug of cache line flashback in the scenario of continuous (multi-sentence) audio input.
+- optimize parameters for the `eos` detection for the purpose of shorter latency.
+- modified the line break strategy into a more smoother nature for dynamic scroll.
+
+citi:
+200k存60天给$1000 年化3%
+50k  存60天给$600 年化7.2%
+15k  存60天给$400 年化16%
+hsbc:
+100k存90天给$750 年化3%
+10k  存90天给$350 年化14%
+1.5k 存90天给$200 年化53%

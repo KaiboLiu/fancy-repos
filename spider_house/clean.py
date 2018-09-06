@@ -35,6 +35,7 @@ def render_num_price(x):
     v2 = detail_place_main['mean'].round(2) 
      
     bar = Bar("{}主要{}房屋数量&月租均价".format(city, x[1]), "data from Lianjia.com")  
+    #bar.use_theme("chalk")
     bar.add("数量",attr,v1,is_stack=True,xaxis_rotate=30,yaxix_min=4.2, 
         xaxis_interval=0,is_splitline_show=False) 
      
