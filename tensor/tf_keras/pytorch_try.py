@@ -14,6 +14,10 @@ c = torch.sum(b)
 
 c.backward()
 
-print(x.grad.data)
-print(y.grad.data)
-print(z.grad.data)
+print(x, x.grad.data)
+print(y, y.grad.data)
+print(z, z.grad.data)
+
+print(a, a.grad.data)
+print(b, b.grad.data)
+print(c, c.grad.data)
