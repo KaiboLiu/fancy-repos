@@ -14,8 +14,8 @@ def get_areas(url):
     t0 = time.time()        # 08/27/2018 by kaibo
     headers = { 
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'} 
-    resposne = requests.get(url, headers=headers) 
-    content = etree.HTML(resposne.text) 
+    response = requests.get(url, headers=headers) 
+    content = etree.HTML(response.text) 
     areas = content.xpath("//dd[@data-index = '0']//div[@class='option-list']/a/text()") 
     print(areas)            # 08/27/2018 by kaibo
     areas_link = content.xpath("//dd[@data-index = '0']//div[@class='option-list']/a/@href") 
@@ -33,8 +33,8 @@ def get_areas(url):
 def get_pages(area,area_link): 
     headers = { 
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'} 
-    resposne = requests.get(area_link, headers=headers) 
-    page_data = re.findall("page-data=\'{\"totalPage\":(\d+),\"curPage\"", resposne.text)    # 08/27/2018 by kaibo
+    response = requests.get(area_link, headers=headers) 
+    page_data = re.findall("page-data=\'{\"totalPage\":(\d+),\"curPage\"", response.text)    # 08/27/2018 by kaibo
     pages =  0 if not page_data else int(page_data[0])        # 08/27/2018 by kaibo
     print("这个区域有" + str(pages) + "页") 
     for page in range(1,pages+1): 
@@ -50,8 +50,8 @@ def get_house_info(area, page, url):
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36'} 
     time.sleep(2) 
     try: 
-        resposne = requests.get(url, headers=headers) 
-        content = etree.HTML(resposne.text) 
+        response = requests.get(url, headers=headers) 
+        content = etree.HTML(response.text) 
         titles = content.xpath("//div[@class='where']/a/span/text()")   # 08/27/2018 by kaibo
         info=[] 
         #for i in range(30): 
